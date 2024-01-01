@@ -16,9 +16,9 @@ Clone your forked repository to your local machine. Replace `<username>` with yo
 git clone https://github.com/<username>/Weather-Detector.git
 ```
 
-### Setting the Server and creating environment
+### Setting the Server and creating a virtual environment
 
-To manage environment.
+To create a virtual environment.
 
 ```bash
 python -m venv venv
