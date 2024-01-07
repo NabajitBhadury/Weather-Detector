@@ -62,7 +62,7 @@ Update the WEATHER_API_KEY variable in the settings.py file with your API key.
 *Third-party Weather API:* Used to fetch real-time weather data.
 
 ### Contributing
-If you want to contribute to the Weather App project, please follow the [contribution guidelines](https://chat.openai.com/c/CONTRIBUTING.md).
+If you want to contribute to the Weather App project, please follow the [contribution guidelines](https://github.com/abhipriyachowdhury/Weather-Detector/blob/main/contributing.md).
 
 ### License
 This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE.md).
