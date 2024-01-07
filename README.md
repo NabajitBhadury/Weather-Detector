@@ -1,4 +1,4 @@
-### Weather Detector Documentation
+# Weather Detector Documentation
 
 ### Introduction
 Welcome to the Weather Detector project! This web application is built using Django, HTML, CSS, and JavaScript to provide users with real-time weather information for any city around the world.
