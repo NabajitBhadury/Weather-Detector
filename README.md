@@ -67,7 +67,4 @@ If you want to contribute to the Weather App project, please follow the [contrib
 ### License
 This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE.md).
 
-### Contact
-If you have any questions or issues, please feel free to contact us at email@example.com.
-
 Thank you for using the Weather App! Stay informed about the weather in any city around the world.
