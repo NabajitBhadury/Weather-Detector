@@ -28,7 +28,7 @@ cd weather-app
 ### Install Dependencies:
 
 ```
-pip install -r requirements.txt
+pip install django
 ```
 
 ### Configure API Key:
