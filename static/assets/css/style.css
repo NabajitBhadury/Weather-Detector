@@ -89,12 +89,31 @@ h1 {
     width: 25%;
     height: 300px;
     flex-shrink: 0;
-    display: flex; /* Add this line */
-    align-items: center; /* Add this line */
-    justify-content: center; /* Add this line */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
     flex-direction: column;
 }
 
+h1 
+{
+    font-family: 'Spirax', cursive;
+    color: var(--primary-color);
+}
+
+h4
+{
+    color: var(--primary-color);
+    /* padding: 10px;  */
+}
+
+.city-image 
+{
+    width: 130px; 
+    height: 130px; 
+    display: block;
+    margin: 0 auto;
+}
 
 .block2
 {
@@ -154,17 +173,51 @@ h1 {
     text-align: center;
     color: var(--primary-color);
     font-size: var(--pc-small); 
+    /* font-weight: bold; */
 }
 
 .press-label {
     text-align: center;
     color: var(--primary-color);
     font-size: var(--pc-small); 
+    /* font-weight: bold; */
 }
 
 .humid-label {
     text-align: center;
     color: var(--primary-color);
     font-size: var(--pc-small); 
+    /* font-weight: bold; */
 }
 
+/* .temp-block .temp, .press-block .pressure, .humid-block .humidity {
+    color: #bf1414; 
+    font-size: 90px; 
+} */
+
+ /* @media (max-width: 480px) {
+    .block1, .block2 {
+        width: 100%; 
+        padding: 10px; 
+    }
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+@media (max-width: 480px) {
+    .nav-style {
+        width: 100%; 
+        padding: 10px; 
+    }
+    .block
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    
+} 
