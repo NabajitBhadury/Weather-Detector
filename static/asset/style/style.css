@@ -1,0 +1,110 @@
+.text-center {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    /* text-decoration: underline; */
+}
+
+.col-md-3 {
+    margin: 7px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+body {
+    background-image: url('path/to/your/image/weatherWallpaper.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1.col-md-3.text-center{
+    color: rgb(214, 255, 215);
+}
+
+h1 {
+    border-bottom: 2px solid;
+    border-color: rgb(72, 72, 72);
+}
+
+.row {
+    margin-top: 20px;
+    padding: 70px 30px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+input.form-control{
+    padding-top: 6px;
+    padding-left: 12px;
+}
+.form-control {
+    border-radius: 0;
+    padding-top: 10px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.outputBox {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(161, 161, 161, 0.8);
+    display: inline-block;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.links {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+a.icon1 {
+    margin-right: 20px;
+}
+
+a.icon2 {
+    margin-right: 20px;
+}
+
+a.icon3 {
+    margin-right: 20px;
+}
+
+a.icon4 {
+    margin-right: 20px;
+}
+
+a.icon5 {
+    margin-right: 20px;
+}
