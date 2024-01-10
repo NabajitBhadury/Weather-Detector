@@ -1,8 +1,11 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static "asset/style/style.css" %}">
   <title>weather</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -14,11 +17,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
-
+<body id="bg">
+  <style>
+      body {
+          background-image: url('{% static "asset/images/weatherWallpaper.jpg" %}');
+          background-size: cover;
+      }
+  </style>
+</body>
 <body>
-  <nav class="row" style="background: grey; color: white;">
-    <div align="center"><h1 class="col-md-3 text-center">Weather Detector</h1></div>
-  </nav>
+  <h1 class="col-md-3 text-center">Weather Detector</h1>
   <br />
   <br />
   <center class="row">
@@ -35,7 +43,7 @@
   </center>
   <div class="row">
     {% if data.country_code %}
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3 outputBox">
       <h1>{{city}}</h1>
       <h3>country code : {{data.country_code}}</h1>
         <h5>coordinate : {{data.coordinate}}</h5>
@@ -45,6 +53,18 @@
     </div>
     {% endif %}
   </div>
+</body>
+<body>
+  <footer class="footer">
+    <div class="links">
+      <a href="https://www.facebook.com/" target="_blank" class="icon1" class="icon">Facebook</a>
+      <a href="https://twitter.com/" target="_blank" class="icon2" class="icon">Twitter</a>
+      <a href="https://www.instagram.com/" target="_blank" class="icon3" class="icon">Instagram</a>
+      <a href="https://github.com/" target="_blank" class="icon4" class="icon">GitHub</a>
+      <a href="https://in.linkedin.com/" target="_blank" class="icon5" class="icon">LinkedIn</a>
+    </div>
+    <p>&copy; 2024 Weather Detector. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
