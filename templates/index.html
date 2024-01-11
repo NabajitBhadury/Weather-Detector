@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -5,7 +6,12 @@
   <meta charset="utf-8">
   <title>weather</title>
   <!-- Latest compiled and minified CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet">
+
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,8 +22,10 @@
 </head>
 
 <body>
-  <nav class="row" style="background: grey; color: white;">
-    <div align="center"><h1 class="col-md-3 text-center">Weather Detector</h1></div>
+  <nav class="row nav-style">
+    <div class="center-div">
+        <h1 class="text">Weather Detector</h1>
+    </div>
   </nav>
   <br />
   <br />
@@ -35,16 +43,30 @@
   </center>
   <div class="row">
     {% if data.country_code %}
-    <div class="col-md-6 col-md-offset-3">
-      <h1>{{city}}</h1>
-      <h3>country code : {{data.country_code}}</h1>
-        <h5>coordinate : {{data.coordinate}}</h5>
-        <h5>temp : {{data.temp}}</h5>
-        <h5>pressure : {{data.pressure}} </h5>
-        <h5>humidity : {{data.humidity}}</h5>
+    <div class="block">
+        <div class="block1">
+            <h1>{{city}}</h1>
+            <img class="city-image" src="../static/assets/images/Brown Simple Welcome January Instagram Post (Square) (1).png" alt="Description of the image">
+            <h4>Country Code : {{data.country_code}}</h4>
+            <h4>Coordinate : {{data.coordinate}}</h4>
+        </div>
+        <div class="block2">
+          <h4 class="temp-label">Temperature</h4>
+          <div class="temp-block">
+              <h4 class="temp"> {{data.temp}}</h4>
+          </div>
+          <h4 class="press-label">Pressure</h4>
+          <div class="press-block">
+              <h4 class="pressure">{{data.pressure}} </h4>
+          </div>
+          <h4 class="humid-label">Humidity</h4>
+          <div class="humid-block">
+              <h4 class="humidity"> {{data.humidity}}</h4>
+        </div>
+      </div>
     </div>
     {% endif %}
-  </div>
+</div>
 </body>
 
 </html>
