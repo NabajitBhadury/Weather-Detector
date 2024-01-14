@@ -288,3 +288,29 @@ h4:hover {
         align-items: center;
     }
 }
+footer {
+   background-color: rgba(255, 185, 255, 0.405);
+   text-align: center;
+   padding: 15px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+ }
+ .links {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .links a {
+   margin: 0 10px;
+   text-decoration: none;
+   font-size: 20px;
+ }
+ .links img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+ }
+ .rights {
+   margin-bottom: 3px;
+ }
