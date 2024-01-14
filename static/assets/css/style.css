@@ -68,7 +68,12 @@ body {
 h1 {
     font-size: var(--pc-medium); /* Adjust this value as needed */
 }
-
+.cityNotFound{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+}
 .center-div {
     display: flex;
     justify-content: center; 
