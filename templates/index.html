@@ -65,6 +65,10 @@
         </div>
       </div>
     </div>
+    {% elif city|length != 0 %}
+    <div class="cityNotFound">
+      <h1>Oops! {{city}} not found.</h1>
+    </div>
     {% endif %}
 </div>
 <footer class="footer">
